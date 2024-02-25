@@ -53,7 +53,6 @@ class Mydatasetpro(data.Dataset):
         self.labels = labels
         self.transforms = transform
 
-    # 进行切片
     def __getitem__(self, index):
         img = self.imgs[index]
         label = self.labels[index]
